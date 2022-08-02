@@ -4,7 +4,6 @@
     margin: 0 auto;
     margin-bottom: 95px;
 }
-
 .about-title {
     font-family: "Roboto";
     font-style: normal;
@@ -17,23 +16,18 @@
     margin: 0;
     margin-bottom: 50px;
 }
-
 .about-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
 }
-
 .about-item {
     position: relative;
     overflow: hidden;
     width: 370px;
     height: 294px;
 }
-
-.about-item:not(:last-child) {
-    margin-right: 30px;
-}
-
 .aboutimg-text {
     position: absolute;
     width: 370px;

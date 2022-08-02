@@ -6,7 +6,6 @@ body {
 button {
     cursor: pointer;
 }
-
 ul {
     padding-inline-start: 0px;
     margin: 0px;
@@ -18,4 +17,10 @@ a {
 }
 li {
     list-style-type: none;
+}
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
 }
