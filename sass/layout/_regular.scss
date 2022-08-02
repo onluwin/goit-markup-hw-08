@@ -1,0 +1,68 @@
+.regular {}
+
+.regular-container {
+    padding: 94px 0;
+}
+
+.regular-title {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.regular-list {
+    display: flex;
+    height: 92px;
+}
+
+.regular-item {
+    width: 170px;
+    height: 92px;
+    margin: 0 auto;
+    border: 1px solid #afb1b8;
+    margin: 0;
+    border-radius: 4px;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular-item:hover,
+.regular-item:focus {
+    border: 1px solid var(--accent-color);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular-link:hover>.regular-icon,
+.regular-link:focus>.regular-icon {
+    fill: var(--accent-color);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.regular-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.regular-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #afb1b8;
+}

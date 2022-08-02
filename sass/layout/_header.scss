@@ -1,0 +1,137 @@
+.header {
+    display: block;
+    height: 80px;
+    max-height: 80px;
+    margin: 0 auto;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.container-head {
+    display: flex;
+    height: 80px;
+}
+
+.portfolio-header {
+    border: 1px solid #ececec;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+
+.logo {
+    color: #000000;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19px;
+    letter-spacing: 0.03em;
+    margin-right: 95px;
+}
+.logo-styles {
+    color: var(--accent-color);
+}
+.nav {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.portfolio-nav {
+    align-items: center;
+    display: flex;
+    margin-right: auto;
+}
+
+.nav-menu {
+    align-items: center;
+    display: flex;
+}
+
+.nav-link {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.nav-link:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts {
+    display: flex;
+    align-items: center;
+}
+.contact-link {
+    height: 17px;
+}
+.contact-link:not(:last-child) {
+    margin-right: 30px;
+}
+.contact-link>.tel-styles {
+    justify-content: center;
+    align-items: center;
+}
+.mail-styles {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    width: 135px;
+    color: var(--secondary-text-color);
+    align-items: center;
+    height: 16px;
+    width: 161px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.mail-styles:hover,
+.mail-styles:focus {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mail-icon {
+    margin-right: 10px;
+    fill: currentColor;
+    display: flex;
+    justify-items: center;
+}
+
+.tel-styles {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+    width: 142px;
+    height: 16px;
+    align-content: center;
+    display: flex;
+}
+
+.tel-styles:hover,
+.tel-styles:focus {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tel-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}

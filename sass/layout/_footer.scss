@@ -1,0 +1,160 @@
+.footer {
+    background: #2f303a;
+    height: 252px;
+}
+.footer-container {
+    display: flex;
+}
+.footer-content {
+    height: 132px;
+    width: 231px;
+    margin-right: 70px;
+    padding-top: 50px;
+    &__logo {
+            display: block;
+            font-family: "Raleway";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.19;
+            letter-spacing: 0.03em;
+            margin-bottom: 20px;
+            color: var(--btntext-hover);
+            width: 145px;
+            height: 31px;
+        }
+    &__logo-styles {
+    color: var(--accent-color);
+}
+}
+.address__contacts {
+    padding-bottom: 60px;
+}
+
+
+.address {
+    width: 231px;
+    height: 81px;
+    &__link {
+            display: block;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: var(--btntext-hover);
+            margin-bottom: 9px;
+        }
+        &__mail {
+            display: block;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+            width: 231px;
+            height: 21px;
+            margin-bottom: 9px;
+        }
+        &__mail:hover,
+        &__mail:focus {
+            color: var(--accent-color);
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        &__tel {
+            display: block;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 0.03em;
+            color: rgba(255, 255, 255, 0.6);
+            width: 231px;
+            height: 21px;
+        }
+    
+        &__tel:hover,
+        &__tel:focus {
+            color: var(--accent-color);
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}
+
+.social-container {
+    margin-right: 93px;
+}
+.social-container__title {
+    padding-top: 60px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--btntext-hover);
+}
+
+.invite {
+    padding-top: 59px;
+    &__title {
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--btntext-hover);
+            margin: 0;
+            margin-bottom: 20px;
+        }
+        &__form {
+            box-sizing: border-box;
+            display: flex;
+        }
+        &__input {
+            margin-right: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            background-color: transparent;
+            width: 358px;
+            height: 50px;
+            outline: none;
+            padding-left: 16px;
+            color: rgba(255, 255, 255, 0.75);
+            box-sizing: border-box;
+        }
+        &__btn {
+            width: 200px;
+            height: 50px;
+            font-family: "Roboto";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.88;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.06em;
+            color: var(--btntext-hover);
+            background: var(--accent-color);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            border: none;
+        }
+        &__btn:hover {
+            background-color: #188ce8;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
+        &__img {
+            vertical-align: middle;
+            margin-left: 9px;
+        }
+}
