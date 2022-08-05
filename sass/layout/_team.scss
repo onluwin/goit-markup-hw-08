@@ -1,7 +1,18 @@
 .our-team {
     background: #f5f4fa;
     padding-bottom: 94px;
-    padding-top: 95px;
+    padding-top: 94px;
+    @include mobile {
+        padding: 60px 0;
+    }
+    @include tablet {
+        padding: 60px 0;
+    }
+    .container {
+        @include mobile {
+            width: 100%;
+        }
+    }
     &__title {
             font-family: "Roboto";
             font-style: normal;
@@ -13,12 +24,27 @@
             color: #212121;
             margin: 0;
             margin-bottom: 50px;
+            @include mobile {
+                margin-bottom: 30px;
+                font-size: 28px;
+                line-height: calc(28 / 33);
+            }
+            @include tablet {
+                margin-bottom: 30px;
+                font-size: 28px;
+                line-height: calc(28 / 33);
+            }
         }
         &__list {
             display: flex;
             margin-top: 50px;
             margin: 0 auto;
             justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            @include tablet {
+                width: 738px;
+            }
         }
     
         &__card {
@@ -26,11 +52,26 @@
                 0px 2px 1px rgba(0, 0, 0, 0.2);
             border-radius: 0px 0px 4px 4px;
             background-color: var(--btntext-hover);
+            
+            @include mobile {
+                width: 100%;
+                margin-left: 15px;
+                margin-right: 15px;
+            }
+            @include tablet {
+                width: 354px;
+            }
+            @include desktop {
             height: 428px;
+            }
         }
-    
-        &__card:not(:last-child) {
-            margin-right: 30px;
+        &__card-img {
+            @include mobile {
+                width: 100%;
+            }
+            @include tablet {
+                width: 354px;
+            }
         }
     
         &__card-title {
@@ -63,13 +104,14 @@
         &__soc-list {
             display: flex;
             justify-content: center;
+            margin-bottom: 24px;
         }
     
         &__soc-item {
             width: 44px;
             height: 44px;
         }
-    
+
         &__soc-item:not(:last-child) {
             margin-right: 10px;
         }
@@ -102,7 +144,6 @@
             transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 }
-
 
 
 

@@ -3,6 +3,12 @@
     height: 390px;
     margin: 0 auto;
     margin-bottom: 95px;
+    @include mobile {
+        display: none;
+    }
+    @include tablet {
+        display: none;
+    }
 }
 .about-title {
     font-family: "Roboto";

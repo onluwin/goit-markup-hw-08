@@ -33,9 +33,8 @@ li {
 
 img {
   display: block;
-  height: auto;
   max-width: 100%;
-  width: 100%;
+  height: auto;
 }
 
 .current.current {
@@ -75,10 +74,10 @@ img {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  width: 1200px;
 }
 
 .backdrop {
@@ -567,7 +566,6 @@ img {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/herobg.png);
     padding: 200px 0px;
     max-width: 1600px;
-    height: 600px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -798,6 +796,16 @@ img {
   margin: 0 auto;
   margin-bottom: 95px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .about {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about {
+    display: none;
+  }
+}
 
 .about-title {
   font-family: "Roboto";
@@ -851,7 +859,22 @@ img {
 .our-team {
   background: #f5f4fa;
   padding-bottom: 94px;
-  padding-top: 95px;
+  padding-top: 94px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .our-team {
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-team {
+    padding: 60px 0;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .our-team .container {
+    width: 100%;
+  }
 }
 .our-team__title {
   font-family: "Roboto";
@@ -865,6 +888,20 @@ img {
   margin: 0;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .our-team__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 0.8484848485;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-team__title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 0.8484848485;
+  }
+}
 .our-team__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -874,16 +911,47 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-team__list {
+    width: 738px;
+  }
 }
 .our-team__card {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--btntext-hover);
-  height: 428px;
 }
-.our-team__card:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .our-team__card {
+    width: 100%;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-team__card {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .our-team__card {
+    height: 428px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .our-team__card-img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-team__card-img {
+    width: 354px;
+  }
 }
 .our-team__card-title {
   padding-top: 30px;
@@ -917,6 +985,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 24px;
 }
 .our-team__soc-item {
   width: 44px;
