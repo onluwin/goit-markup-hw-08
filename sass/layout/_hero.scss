@@ -1,13 +1,52 @@
 .hero {
-    height: 600px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/herobg.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 1600px;
+    background-size: cover;
+    
+    
+
+    @include desktop {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/herobg.png);
+        padding: 200px 0px;
+        max-width: 1600px;
+        height: 600px;
+    }
+
+    @include tablet {
+height: 400px;
+
+background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
+        url(../images/herobg-tab.png);
+    }
+    
+    @include mobile{
+        height: 400px;
+        
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
+            url(../images/herobg-mob.png);
+    }
 }
+
+
+
+
+
+
+
 .hero-title {
-    padding-bottom: 30px;
-    font-family: "Roboto";
+    font-weight: 900;
+        font-size: 26px;
+        line-height: calc(42 / 26);
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #ffffff;
+        margin: 0;
+        padding-bottom: 30px;
+
+    
+    @include desktop {
+padding-bottom: 30px;
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -15,10 +54,19 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    padding-top: 200px;
     color: var(--btntext-hover);
     margin: 0;
+    }
+    @include tablet {
+        padding-top: 118px;
+    }
+    @include mobile {
+        padding-top: 118px;
+    }
 }
+
+
+
 .hero-button {
     width: 200px;
     height: 50px;
@@ -43,4 +91,10 @@
 .hero-button:hover {
     background-color: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+.hero-thumb {
+    padding-left: 15px;
+    padding-right: 15px;
 }
