@@ -30,7 +30,7 @@
   </head>
   <body>
     <!-- Header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container-head container">
         <nav class="nav">
           <a lang="en" class="logo" href="./index.html"
@@ -63,8 +63,54 @@
             >
           </li>
         </ul>
+        <button class="mob-menu__btn" aria-controls="menu-container" data-menu-button type="button">
+          <svg class="mob-menu__open" width="40" height="40">
+            <use class="mob-menu__icon-open" href="./images/symbol-defs.svg#icon-mob_menu_open"></use>
+            <use class="mob-menu__icon-close" href="./images/symbol-defs.svg#icon-mob_menu_close"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <!-----MOB-MENU----->
+
+      <div class="mob-menu" id="menu-container" data-menu data-menu-open>
+        <div class="mob-menu__container">
+        <div class="mob-menu__container--top">
+          <ul class="mob-menu__list">
+            <li class="mob-menu__item mob-menu__current">
+              <a class="mob-menu__link" target="_blank" href="./index.html">Студия</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" target="_blank" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link" target="_blank" href="">Контакты</a>
+            </li>
+          </ul>
+        </div>
+          <div class="mob-menu__container--bottom">
+            <ul class="mob-menu__contacts">
+          <li class="mob-menu__contacts__item">
+            <a lang="en" class="mob-menu__contacts__link" href="mailto:info@devstudio.com"
+              >
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="mob-menu__contacts__item">
+            <a class="mob-menu__contacts__link" href="tel:+380961111111"
+              >+38 096 111 11 11</a>
+          </li>
+        </ul>
+        <ul class="mob-menu__socials">
+          <li class="mob-menu__socials__item"><a class="mob-menu__socials__link" href="">Instagram</a></li>
+          <li class="mob-menu__socials__item"><a class="mob-menu__socials__link" href="">Twitter</a></li>
+          <li class="mob-menu__socials__item"><a class="mob-menu__socials__link" href="">Facebook</a></li>
+          <li class="mob-menu__socials__item"><a class="mob-menu__socials__link" href="">Linkedin</a></li>
+        </ul>
+          </div>
+      </div>
+      </div>
+    </header>
     <!-- Main -->
     <main class="main">
         <!-- Hero -->
@@ -510,7 +556,7 @@
 
     <!-- MODAL -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btnclose" data-modal-close type="button">
           <svg class="modal__btnclose-svg" width="14" height="14">
@@ -575,7 +621,9 @@
           <button type="submit" class="modal__btnsubmit">Отправить</button>
         </form>
       </div>
-    </div>
+    </div> -->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/scroll.js"></script>
   </body>
 </html>

@@ -15,14 +15,12 @@
     }
 }
 .peculiarities-container {
-    box-sizing: border-box;
-
     @include desktop {
         width: 1200px;
         margin: 0 auto;
     }
     @include tablet {
-        width: 738px;
+        width: 768px;
         margin: 0 auto;
         @include mobile {
             padding-left: 15px;
@@ -41,7 +39,6 @@
         margin: 0 auto;
     }
     @include tablet {
-        width: 738px;
     }
 
 }

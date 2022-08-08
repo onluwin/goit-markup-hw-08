@@ -2,24 +2,30 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
     @include desktop {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/herobg.png);
         padding: 200px 0px;
         max-width: 1600px;
     }
     @include tablet {
+        width: 768px;
+        margin: 0 auto;
 height: 400px;
 background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
         url(../images/herobg-tab.png);
     }
     @include mobile{
+        margin: 0 auto;
         height: 400px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
             url(../images/herobg-mob.png);
     }
 }
-
+.hero-thumb {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
 .hero-title {
     font-weight: 900;
         font-size: 26px;
@@ -50,7 +56,6 @@ padding-bottom: 30px;
         padding-top: 118px;
     }
 }
-
 .hero-button {
     width: 200px;
     height: 50px;
@@ -75,9 +80,4 @@ padding-bottom: 30px;
 .hero-button:hover {
     background-color: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.hero-thumb {
-    padding-left: 15px;
-    padding-right: 15px;
 }
