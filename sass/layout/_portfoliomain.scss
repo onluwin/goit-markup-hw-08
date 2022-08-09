@@ -164,21 +164,13 @@
                     max-width: 480px;
                 }
 }
-.card:nth-child(2) {
-    @include tablet {
-        height: 440px;
-    }
-}
-.card:nth-child(1) {
-    @include tablet {
-        height: 440px;
-    }
-}
-.card:nth-child(2) {
-    @include mobile {
-    }
-}
 .card-animation {
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+        padding: 28px 24px;
+        font-size: 15px;
+        line-height: 1.28;
+        align-items: center;
+    }
     position: absolute;
     top: 0;
     margin: 0;

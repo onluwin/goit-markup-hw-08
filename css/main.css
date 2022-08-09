@@ -2044,18 +2044,6 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .card:nth-child(2) {
-    height: 440px;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .card:nth-child(1) {
-    height: 440px;
-  }
-}
-
 .card-animation {
   position: absolute;
   top: 0;
@@ -2075,6 +2063,16 @@ img {
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .card-animation {
+    padding: 28px 24px;
+    font-size: 15px;
+    line-height: 1.28;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 .card:hover .card-animation, .card:focus .card-animation {
   -webkit-transform: translateY(0);
