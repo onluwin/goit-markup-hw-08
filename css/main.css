@@ -379,6 +379,7 @@ img {
 .header {
   display: block;
   height: 80px;
+  max-width: 1200px;
   margin: 0 auto;
   border-left: none;
   border-right: none;
@@ -388,6 +389,13 @@ img {
   .header {
     height: 60px;
     margin: 0 auto;
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header {
+    max-width: 768px;
+    margin: 0 auto;
   }
 }
 
@@ -396,20 +404,21 @@ img {
   display: -ms-flexbox;
   display: flex;
   height: 80px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container-head {
-    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .container-head {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 480px;
     position: relative;
     height: 60px;
+    margin: 0 auto;
   }
 }
 
@@ -788,6 +797,25 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .main {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .main {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
 .hero {
   background-position: center;
   background-repeat: no-repeat;
@@ -803,7 +831,7 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
-    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
     height: 400px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4))), url(../images/herobg-tab.png);
@@ -812,6 +840,7 @@ img {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .hero {
+    max-width: 480px;
     margin: 0 auto;
     height: 400px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4))), url(../images/herobg-mob.png);
@@ -819,10 +848,16 @@ img {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .main-container {
+    max-width: 480px;
+  }
+}
+
 .hero-thumb {
   padding-left: 15px;
   padding-right: 15px;
-  width: 100%;
+  max-width: 480px;
 }
 
 .hero-title {
@@ -904,7 +939,7 @@ img {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .peculiarities {
-    width: 100%;
+    max-width: 480px;
     padding: 60px 0;
     margin: 0 auto;
     padding-left: 15px;
@@ -914,21 +949,22 @@ img {
 
 @media screen and (min-width: 1200px) {
   .peculiarities-container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .peculiarities-container {
-    width: 768px;
+    max-width: 768px;
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 320px) and (max-width: 767px) {
   .peculiarities-container {
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
   }
 }
 
@@ -942,10 +978,17 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .peculiarities-list {
-    width: 1170px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .peculiarities-list {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .peculiarities-item {
     width: 270px;
@@ -1091,6 +1134,8 @@ img {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .our-team {
     padding: 60px 0;
+    max-width: 480px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1100,7 +1145,7 @@ img {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .our-team .container {
-    width: 100%;
+    max-width: 480px;
   }
 }
 .our-team__title {
@@ -1144,7 +1189,7 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .our-team__list {
-    width: 738px;
+    max-width: 768px;
   }
 }
 .our-team__card {
@@ -1155,7 +1200,7 @@ img {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .our-team__card {
-    width: 100%;
+    max-width: 480px;
     margin-left: 15px;
     margin-right: 15px;
   }
@@ -1262,13 +1307,15 @@ img {
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .regular-container {
     padding: 60px 0;
-    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .regular-container {
     padding: 60px 0;
-    width: 738px;
+    max-width: 768px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1604,7 +1651,7 @@ img {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .container-main {
-    width: 480px;
+    max-width: 480px;
     margin: 0 auto;
     padding: 0 15px;
   }

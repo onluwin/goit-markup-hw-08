@@ -7,7 +7,7 @@
         padding: 60px 0;
     }
     @include mobile {
-        width: 100%;
+        max-width: 480px;
         padding: 60px 0;
         margin: 0 auto;
         padding-left: 15px;
@@ -16,16 +16,18 @@
 }
 .peculiarities-container {
     @include desktop {
-        width: 1200px;
+        max-width: 1200px;
         margin: 0 auto;
+
     }
     @include tablet {
-        width: 768px;
+        max-width: 768px;
         margin: 0 auto;
-        @include mobile {
-            padding-left: 15px;
+        padding-left: 15px;
             padding-right: 15px;
-            width: 100%;
+        @include mobile {
+            max-width: 480px;
+            margin: 0 auto;
         }
     }
 }
@@ -33,12 +35,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-
     @include desktop {
-        width: 1170px;
+        max-width: 1200px;
         margin: 0 auto;
     }
     @include tablet {
+        max-width: 768px;
+        margin: 0 auto;
     }
 
 }

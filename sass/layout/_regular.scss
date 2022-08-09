@@ -5,11 +5,13 @@
 .regular-container {
     @include mobile {
         padding: 60px 0;
-        width: 100%;
+        max-width: 480px;
+        margin: 0 auto;
     }
     @include tablet {
         padding: 60px 0;
-        width: 738px;
+        max-width: 768px;
+        margin: 0 auto;
     }
     @include desktop {
         padding: 94px 0;

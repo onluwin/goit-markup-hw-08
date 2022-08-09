@@ -4,13 +4,15 @@
     padding-top: 94px;
     @include mobile {
         padding: 60px 0;
+        max-width: 480px;
+        margin: 0 auto;
     }
     @include tablet {
         padding: 60px 0;
     }
     .container {
         @include mobile {
-            width: 100%;
+            max-width: 480px;
         }
     }
     &__title {
@@ -43,7 +45,7 @@
             flex-wrap: wrap;
             gap: 30px;
             @include tablet {
-                width: 738px;
+                max-width: 768px;
             }
         }
     
@@ -54,7 +56,7 @@
             background-color: var(--btntext-hover);
             
             @include mobile {
-                width: 100%;
+                max-width: 480px;
                 margin-left: 15px;
                 margin-right: 15px;
             }

@@ -1,3 +1,17 @@
+.main {
+    @include desktop {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    @include tablet {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    @include mobile {
+        max-width: 480px;
+        margin: 0 auto;
+    }
+}
 .hero {
     background-position: center;
     background-repeat: no-repeat;
@@ -8,23 +22,29 @@
         max-width: 1600px;
     }
     @include tablet {
-        width: 768px;
+        max-width: 768px;
         margin: 0 auto;
 height: 400px;
 background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
         url(../images/herobg-tab.png);
     }
     @include mobile{
+        max-width: 480px;
         margin: 0 auto;
         height: 400px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
             url(../images/herobg-mob.png);
     }
 }
+.main-container {
+    @include mobile {
+        max-width: 480px;
+    }
+}
 .hero-thumb {
     padding-left: 15px;
     padding-right: 15px;
-    width: 100%;
+    max-width: 480px;
 }
 .hero-title {
     font-weight: 900;
