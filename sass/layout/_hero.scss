@@ -1,6 +1,6 @@
 .main {
     @include desktop {
-        max-width: 1200px;
+        max-width: 1600px;
         margin: 0 auto;
     }
     @include tablet {
@@ -16,35 +16,37 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+
     @include desktop {
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/herobg.png);
         padding: 200px 0px;
-        max-width: 1600px;
+        width: 100%;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/herobg.png);
+        
     }
     @include tablet {
         max-width: 768px;
         margin: 0 auto;
 height: 400px;
-background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
-        url(../images/herobg-tab.png);
+background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/herobg-tab.jpg);
     }
     @include mobile{
         max-width: 480px;
         margin: 0 auto;
         height: 400px;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
-            url(../images/herobg-mob.png);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/herobg-mob.jpg);
     }
 }
 .main-container {
     @include mobile {
         max-width: 480px;
+        margin: 0 auto;
     }
 }
 .hero-thumb {
     padding-left: 15px;
     padding-right: 15px;
-    max-width: 480px;
+    max-width: 1600px;
 }
 .hero-title {
     font-weight: 900;
@@ -56,9 +58,8 @@ background-image: linear-gradient(rgba(47, 48, 58, 0.4)),
         color: #ffffff;
         margin: 0;
         padding-bottom: 30px;
-
     @include desktop {
-padding-bottom: 30px;
+    padding-bottom: 30px;
     font-style: normal;
     font-weight: 900;
     font-size: 44px;

@@ -161,7 +161,7 @@
             height: 404px;
         }
                 @include mobile {
-                    width: 480px;
+                    max-width: 480px;
                 }
 }
 .card:nth-child(2) {
@@ -210,12 +210,10 @@
     }
     @include mobile {
         width: 100%;
-        height: 294px;
     }
 }
 .text-card {
     width: 322px;
-    height: 110px;
     padding: 20px 24px;
     @include tablet {
         width: 100%;

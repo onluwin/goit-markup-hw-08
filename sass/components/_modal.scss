@@ -19,6 +19,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 40px;
+    @include tablet {
+        width: calc(100% - 30px);
+    }
+    @include mobile {
+        width: calc(100% - 30px);
+    }
     &__btnclose {
             border-radius: 50%;
             background-color: var(--btntext-hover);

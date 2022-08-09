@@ -1,7 +1,7 @@
 .header {
     display: block;
     height: 80px;
-    max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     border-left: none;
     border-right: none;
@@ -21,6 +21,10 @@
     height: 80px;
     padding-left: 15px;
     padding-right: 15px;
+    @include desktop {
+        width: 1200px;
+        margin: 0 auto;
+    }
     @include tablet {
         max-width: 768px;
         margin: 0 auto;
@@ -217,10 +221,13 @@
     }
 }
 .mob-menu__btn {
+    margin-top: 10px;
+    margin-bottom: 10px;   
+    width: 40px;
+    height: 40px;
     z-index: 2;
     border: none;
     background-color: transparent;
-    display: block;
     margin-left: auto;
     padding: 0;
     margin-right: 10px;
@@ -230,28 +237,24 @@
     @include tablet {
         display: none;
     }
-}
-.mob-menu__btn.is-open > .mob-menu__icon-close {
-    display: block;
-}
-.mob-menu__btn:hover > {
-    fill: var(--accent-color);
+        &:hover,
+        &:focus {
+            fill: var(--accent-color);
+        }
 }
 
-.mob-menu__btn.is-open > .mob-menu__icon-open {
+.mob-menu__btn .mob-menu__icon-close {
     display: none;
 }
-.mob-menu__icon-close {
+.mob-menu__btn.is-open .mob-menu__icon-close {
+    display: block;
+}
+.mob-menu__btn.is-open .mob-menu__icon-open {
     display: none;
-}
-.mob-menu__open {
-}
-.mob-menu__close {
 }
 .mob-menu__list {
     display: block;
 }
-
 .mob-menu__item {
     font-family: 'Roboto';
     font-style: normal;
@@ -263,24 +266,15 @@
 .mob-menu__item:not(:last-child) {
     margin-bottom: 32px;
 }
-.mob-menu__item:last-child {
-}
-
-.mob-menu__link {}
-
 .mob-menu__container--bottom {
     padding-bottom: 40px;
     position: absolute;
     bottom: 0;
 }
-
 .mob-menu__contacts {
     display: block;
     margin-bottom: auto;
 }
-
-.mob-menu__contacts__item {}
-
 .mob-menu__contacts__item:first-child {
     font-family: 'Roboto';
     font-style: normal;
@@ -301,8 +295,6 @@
     color: var(--secondary-text-color);
     margin-bottom: 64px;
 }
-.mob-menu__contacts__link {}
-
 .mob-menu__socials {
     display: flex;
     flex-wrap: wrap;
@@ -321,9 +313,6 @@
     padding-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
-
-.mob-menu__socials__link {}
-
 .mob-menu__current {
     color: var(--accent-color);
 }

@@ -1,23 +1,27 @@
 .regular {
-    margin-left: 15px;
-    margin-right: 15px;
 }
 .regular-container {
     @include mobile {
         padding: 60px 0;
         max-width: 480px;
         margin: 0 auto;
+        margin-left: 15px;
+        margin-right: 15px;
     }
-    @include tablet {
-        padding: 60px 0;
-        max-width: 768px;
-        margin: 0 auto;
-    }
-    @include desktop {
-        padding: 94px 0;
-        width: 1200px;
-        margin: 0 auto;
-    }
+}
+
+@include tablet {
+    padding: 60px 0;
+    max-width: 768px;
+    margin: 0 auto;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+@include desktop {
+    padding: 94px 0;
+    width: 1200px;
+    margin: 0 auto;
 }
 .regular-title {
     font-family: "Roboto";
