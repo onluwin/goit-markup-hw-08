@@ -28,13 +28,13 @@
         max-width: 768px;
         margin: 0 auto;
 height: 400px;
-background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/herobg-tab.jpg);
+background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/herobg-tab.png);
     }
     @include mobile{
         max-width: 480px;
         margin: 0 auto;
         height: 400px;
-        background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/herobg-mob.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../images/herobg-mob.png);
     }
 }
 .main-container {
